@@ -9,6 +9,7 @@ a_t = {0: 'left', 1: 'right'}
 s_t = {0: 'left good', 1: 'right_good'}
 o_t = {0: 'good choice', 1: 'bad choice'}
 d_t = list(range(maximum_duration))
+regime = {0: 'regular', 1: 'irregular'}
 
 
 # Duration generators
