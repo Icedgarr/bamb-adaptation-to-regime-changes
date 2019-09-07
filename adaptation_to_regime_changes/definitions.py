@@ -16,12 +16,12 @@ regime = {0: 'regular', 1: 'irregular'}
 def generate_regular_d():
     duration = maximum_duration + 1
     while duration > maximum_duration:
-        duration = np.random.binomial(40, 0.5, 1)
+        duration = int(np.random.binomial(40, 0.5, 1))
     return duration
 
 
 def generate_irregular_d():
     duration = maximum_duration + 1
     while duration > maximum_duration:
-        duration = np.random.lognormal(2, 1, 1)
+        duration = int(np.round(np.random.lognormal(2, 1, 1))+1)
     return duration
