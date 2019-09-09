@@ -1,6 +1,6 @@
 import os
 
-import scipy
+import scipy.io
 import pandas as pd
 
 
