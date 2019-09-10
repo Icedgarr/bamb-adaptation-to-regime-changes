@@ -19,7 +19,11 @@ def generate_subject_df(data, subject):
     df['action'] = data['A'][0]
     df['correct'] = data['C'][0]
     df['reaction_time'] = data['RT'][0]
-    df['reward'] = list(data['R'])
+    df['reward'] = data['Rew'][0]
+    df['reward_vector'] = list(data['R'])
+    df['regular'] = data['regular'][0][0][0]
+    df['irregular'] = data['irregular'][0][0][0]
+    df['random_lr'] = data['random_lr'][0]
     return df
 
 
