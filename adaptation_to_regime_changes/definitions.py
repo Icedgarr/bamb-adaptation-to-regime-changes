@@ -1,7 +1,7 @@
 import numpy as np
 
 # parameters
-maximum_duration = 100
+maximum_duration = 50
 theta_good = 0.75
 
 # Space of the random variables
