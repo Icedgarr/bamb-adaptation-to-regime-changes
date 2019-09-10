@@ -63,8 +63,6 @@ class BayesianPlanner(object):
         
         
     def update_beliefs(self, tau, observation, response):
-        print(tau, response, observation)
-        #what do at t=0??
         if tau > 0:
             self.actions[tau-1] = response
             self.observations[tau-1] = observation
